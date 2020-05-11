@@ -20,16 +20,17 @@ In short, when you submit code changes, your submissions are understood to be un
 - Fork repo
 - Create your branch from `master`.
 - Name your branch in the manner `github_username-learning-progress`, so everyone knows the awesome developer who just took up Js as  a programming language ie `themaleem-learning-progress` 
-- Remember to regularly update your forked repo from this repo's master. See **[THIS]**(https://stackoverflow.com/questions/7244321/how-do-i-update-a-github-forked-repository) for better understanding
+- Remember to regularly update your forked repo from this repo's master. See **[THIS](https://stackoverflow.com/questions/7244321/how-do-i-update-a-github-forked-repository)** for better understanding
 - Update README.md **contributors** section with your github username or profile: `[Themaleem](https://github.com/themaleem)`
 - Issue that pull request! 🚀
 
   ### On maintaining your own branch
-  - In your `github_username_learning-progress` folder
-  - create a subfolder for each topic you're learning
-      - `github_username_learning-progress/js-variables` 
-      - `github_username_learning-progress/js-objects`
-  - These  subfolders will when hold the codes and notes specific to the topic
+  - In the `track` folder located in your `github_username_learning-progress` branch,
+  - Create a new folder 📂 with your username eg `themalem\` 
+  - and in your username folder 📂 create a new subfolder 📂 for each topic you're learning ie you will end up with  
+      - **`track\themaleem\js-variables`** (if you're learning about javascript variables)
+      - **`track\themaleem\js-objects`**   (if you're learning about javascript objects)
+  - These  subfolders will then hold the codes and notes specific to the topic
   
   
 ## Report bugs using Github's issues 
