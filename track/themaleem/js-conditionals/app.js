@@ -74,3 +74,61 @@ console.log( message );
 // Otherwise, it continues to the expression after the next colon ‘":"’, checking age < 100 .
 // If that’s true – it returns 'Greetings!' . 
 // Otherwise, it continues to the expression after the last colon ‘":"’, returning 'What an unusual age!'
+
+
+
+// LOGICAL OPERATORS
+// There are three logical operators in JavaScript: || (OR), && (AND), ! (NOT).
+
+// 1. logical OR ( || )
+// manipulate boolean values.If any of its args are true,it returns true, otherwise false 
+// If an operand is not a boolean, it’s converted to a boolean for the evaluation
+// a chain of OR "||" returns the first truthy value
+true || true; // true
+false || true; // true
+true || false; // true
+false || false; // false
+1 || 0 || false // 1
+
+let currentUser = null;
+let defaultUser = "John";
+let name = currentUser || defaultUser || "unnamed"; // "John" (the first truthy value)
+
+let hour = prompt('Time of the day?', 9);
+if (hour < 10 || hour > 18) {
+    console.log( 'The office is closed.' );
+}
+
+
+
+// 2. logical AND ( && )
+// AND returns true if both operands are truthy, otherwise false
+// a chain of AND "&&" returns the first falsy value or the last value if none were found
+true && true; // true
+false && true; // false
+true && false; // false
+false && false; // false
+1 || 0 || false; // false
+1 || "something" || true; // 1
+
+let hour = 12;
+let minute = 30;
+if (hour == 12 && minute == 30) {
+    console.log( 'The time is 12:30' );
+}
+
+// precedence of AND is higher tha OR
+//so  "a && b || c && d" is essentially the same as "(a && b) || (c && d)"
+
+
+
+// 3. logical NOT ( ! )
+// The syntax is pretty simple: result = !value;
+
+!true; //false
+!false; //true
+!0; // true
+!'ddjd'; //false
+// A double NOT !! is sometimes used for converting a value to boolean type
+!!"non-empty string"; // true
+!!null; // false
